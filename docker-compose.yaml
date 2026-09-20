@@ -138,6 +138,8 @@ services:
     image: postgres:17-alpine
     container_name: postiz-postgres
     restart: always
+    ports:
+      - '5432:5432'
     environment:
       POSTGRES_PASSWORD: postiz-password
       POSTGRES_USER: postiz-user
@@ -155,6 +157,8 @@ services:
     image: redis:7.2
     container_name: postiz-redis
     restart: always
+    ports:
+      - '6379:6379'
     healthcheck:
       test: redis-cli ping
       interval: 10s
