@@ -1,11 +1,20 @@
 <p align="center">
   <a href="https://tchuekam.com" target="_blank">
-    <img src="https://img.shields.io/badge/GianTecH%20Empire-Flagship%20Engine-612BD3?style=for-the-badge&logo=rocket&logoColor=white" alt="GianTecH Empire" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/poztyfy-wordmark.png">
+      <img alt="POZTYFY by GianTecH Empire" src=".github/assets/poztyfy-wordmark-black.png" width="460" />
+    </picture>
   </a>
 </p>
 
-<h1 align="center">🚀 Postyfy</h1>
-<h3 align="center">The Next-Generation AI Multi-Channel Social Growth & Autonomous Scheduling Engine</h3>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/poztyfy-icon.png">
+    <img alt="POZTYFY Icon" src=".github/assets/poztyfy-icon-black.png" width="90" />
+  </picture>
+</p>
+
+<h2 align="center">The Next-Generation AI Multi-Channel Social Growth & Autonomous Scheduling Engine</h2>
 
 <p align="center">
   <strong>Engineered by <a href="https://tchuekam.com">GianTecH Empire</a> · Founded by <a href="https://tchuekam.com">Rostand Tchuekam</a></strong>
@@ -22,17 +31,17 @@
 
 ## ⚡ Overview
 
-**Postyfy** is the ultimate enterprise-grade social media operating system designed, engineered, and maintained by **GianTecH Empire**. 
+**POZTYFY** is the ultimate enterprise-grade social media operating system designed, engineered, and maintained by **GianTecH Empire**.
 
-Whether you are scaling personal brand authority, operating a multi-client digital agency, or orchestrating autonomous AI content marketing pipelines, Postyfy provides end-to-end multi-platform scheduling, durable workflow execution, deep analytics, and native **Model Context Protocol (MCP)** support for autonomous agent interaction.
+Whether you are scaling personal brand authority, operating a multi-client digital agency, or orchestrating autonomous AI content marketing pipelines, POZTYFY provides end-to-end multi-platform scheduling, durable workflow execution, deep analytics, and native **Model Context Protocol (MCP)** support for autonomous agent interaction.
 
-Integrates seamlessly with the **TchueKAM Agent** ecosystem and GianTecH business automation suites to transform raw thoughts, transcripts, and assets into viral, high-converting social campaigns.
+Integrates seamlessly with the **TchueKAM Agent** desktop ecosystem and GianTecH business automation suites to transform raw thoughts, transcripts, and assets into viral, high-converting social campaigns.
 
 ---
 
 ## 🌐 Supported Channels (30+ Platforms)
 
-Postyfy connects directly to official APIs across all tier-1 social networks, messaging communities, and developer ecosystems:
+POZTYFY connects directly to official APIs across all tier-1 social networks, messaging communities, and developer ecosystems:
 
 | Category | Platforms Supported |
 | :--- | :--- |
@@ -47,7 +56,7 @@ Postyfy connects directly to official APIs across all tier-1 social networks, me
 
 - 📅 **Unified Interactive Visual Calendar**: Drag-and-drop scheduling across dozens of channels with timezone-aware publishing slots and queue automation.
 - 🤖 **Autonomous AI Content Generation**: Built-in Copilot for drafting engaging hooks, generating platform-tailored variations, and repurposing content in one click.
-- 🔌 **Native MCP (Model Context Protocol) Server**: Connect **TchueKAM Agent**, Claude Desktop, Cursor, or custom AI agents directly to your Postyfy instance to schedule, inspect, and optimize posts conversationally.
+- 🔌 **Native MCP (Model Context Protocol) Server**: Connect **TchueKAM Agent**, Claude Desktop, Cursor, or custom AI agents directly to your POZTYFY instance to schedule, inspect, and optimize posts conversationally.
 - 🎨 **In-App Studio (Polotno Engine)**: High-speed canvas editor for designing images, social banners, and multi-slide carousels directly in your browser.
 - 🛡️ **Durable Temporal Workflows**: Powered by Temporal.io for guaranteed execution, automatic retries, rate-limit backoffs, and zero lost schedules even across server reboots.
 - 👥 **Multi-Tenant Team & Agency Management**: Roles, permissions, collaborative drafts, team review cycles, and customer workspaces.
@@ -59,7 +68,7 @@ Postyfy connects directly to official APIs across all tier-1 social networks, me
 ## 🏗️ Architecture & Technology Stack
 
 ```
-Postyfy Architecture (GianTecH Empire)
+POZTYFY Architecture (GianTecH Empire)
 ├── apps/
 │   ├── frontend/         # Next.js App Router, React, Tailwind CSS, SWR, Polotno
 │   ├── backend/          # NestJS Modular REST API, Prisma ORM, Swagger, MCP Server
@@ -83,7 +92,7 @@ Postyfy Architecture (GianTecH Empire)
 
 ## 🚀 Quick Start (Docker Deployment)
 
-The fastest way to launch your own production or development instance of Postyfy:
+The fastest way to launch your own production or development instance of POZTYFY:
 
 ### 1. Clone the Repository
 ```bash
@@ -112,7 +121,7 @@ STORAGE_PROVIDER="local"
 EMAIL_PROVIDER="resend"
 RESEND_API_KEY="your-resend-key"
 EMAIL_FROM_ADDRESS="notifications@your-domain.com"
-EMAIL_FROM_NAME="Postyfy"
+EMAIL_FROM_NAME="POZTYFY"
 
 # AI Capabilities
 OPENAI_API_KEY="your-openai-api-key"
@@ -123,14 +132,14 @@ OPENAI_API_KEY="your-openai-api-key"
 docker compose up -d
 ```
 
-Your Postyfy dashboard will be available at:
+Your POZTYFY dashboard will be available at:
 👉 `http://localhost:4007` (or your configured `MAIN_URL`)
 
 ---
 
 ## 🤖 Automations & Integrations
 
-Postyfy exposes a first-class developer API and pre-built integration nodes:
+POZTYFY exposes a first-class developer API and pre-built integration nodes:
 - **N8N / Make.com / Zapier**: Automate publishing workflows from Notion, Airtable, Google Sheets, or RSS feeds.
 - **Node.js / TypeScript SDK**: Available in `apps/sdk` for programmatic content distribution.
 - **MCP Server**: Seamlessly pluggable into modern AI developer tools and the **TchueKAM Agent** desktop environment.
@@ -144,7 +153,7 @@ Postyfy exposes a first-class developer API and pre-built integration nodes:
 - **Founder & Visionary**: Rostand Tchuekam
 - **Official Website**: [https://tchuekam.com](https://tchuekam.com)
 - **Documentation**: [https://docs.tchuekam.com](https://docs.tchuekam.com)
-- **Flagship AI Systems**: [TchueKAM Agent](https://tchuekam.com) · Postyfy · Magida Enterprise
+- **Flagship AI Systems**: [TchueKAM Agent](https://tchuekam.com) · POZTYFY · Magida Enterprise
 - **Contact & Inquiries**: `rebornedbetalpha@gmail.com` / `contact@tchuekam.com`
 - **Headquarters**: Yaoundé (Bastos), Cameroon
 
