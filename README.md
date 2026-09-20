@@ -1,141 +1,155 @@
 <p align="center">
-  <a href="https://postiz.com/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/765e9d72-3ee7-4a56-9d59-a2c9befe2311">
-    <img alt="Postiz Logo" src="https://github.com/user-attachments/assets/f0d30d70-dddb-4142-8876-e9aa6ed1cb99" width="280"/>
-  </picture>
+  <a href="https://tchuekam.com" target="_blank">
+    <img src="https://img.shields.io/badge/GianTecH%20Empire-Flagship%20Engine-612BD3?style=for-the-badge&logo=rocket&logoColor=white" alt="GianTecH Empire" />
   </a>
 </p>
 
-<p align="center">
-<a href="https://opensource.org/license/agpl-v3">
-  <img src="https://img.shields.io/badge/License-AGPL%203.0-blue.svg" alt="License">
-</a>
-</p>
-
-<h3 align="center"><strong><a href="https://github.com/gitroomhq/postiz-agent">NEW: check out Postiz agent CLI! perfect for OpenClaw and other agents</a></strong></h3>
-<div align="center">
-  <strong>
-  <h2>Your ultimate AI social media scheduling tool</h2><br />
-  <a href="https://postiz.com">Postiz</a>: An alternative to: Buffer.com, Hypefury, Twitter Hunter, etc...<br /><br />
-  </strong>
-  Postiz offers everything you need to manage your social media posts,<br />build an audience, capture leads, and grow your business.
-</div>
-
-<div class="flex" align="center">
-  <br />
-  <img alt="Instagram" src="https://postiz.com/svgs/socials/Instagram.svg" width="32">
-  <img alt="Youtube" src="https://postiz.com/svgs/socials/Youtube.svg" width="32">
-  <img alt="Dribbble" src="https://postiz.com/svgs/socials/Dribbble.svg" width="32">
-  <img alt="Linkedin" src="https://postiz.com/svgs/socials/Linkedin.svg" width="32">
-  <img alt="Reddit" src="https://postiz.com/svgs/socials/Reddit.svg" width="32">
-  <img alt="TikTok" src="https://postiz.com/svgs/socials/TikTok.svg" width="32">
-  <img alt="Facebook" src="https://postiz.com/svgs/socials/Facebook.svg" width="32">
-  <img alt="Pinterest" src="https://postiz.com/svgs/socials/Pinterest.svg" width="32">
-  <img alt="Threads" src="https://postiz.com/svgs/socials/Threads.svg" width="32">
-  <img alt="X" src="https://postiz.com/svgs/socials/X.svg" width="32">
-  <img alt="Slack" src="https://postiz.com/svgs/socials/Slack.svg" width="32">
-  <img alt="Discord" src="https://postiz.com/svgs/socials/Discord.svg" width="32">
-  <img alt="Mastodon" src="https://postiz.com/svgs/socials/Mastodon.svg" width="32">
-  <img alt="Bluesky" src="https://postiz.com/svgs/socials/Bluesky.svg" width="32">
-</div>
+<h1 align="center">🚀 Postyfy</h1>
+<h3 align="center">The Next-Generation AI Multi-Channel Social Growth & Autonomous Scheduling Engine</h3>
 
 <p align="center">
-  <br />
-  <a href="https://docs.postiz.com" rel="dofollow"><strong>Explore the docs »</strong></a>
-  <br />
-
-  <br />
-  <a href="https://youtube.com/@postizofficial" rel="dofollow"><strong>Watch the YouTube Tutorials»</strong></a>
-  <br />
+  <strong>Engineered by <a href="https://tchuekam.com">GianTecH Empire</a> · Founded by <a href="https://tchuekam.com">Rostand Tchuekam</a></strong>
 </p>
 
 <p align="center">
-  <a href="https://platform.postiz.com">Register</a>
-  ·
-  <a href="https://discord.postiz.com">Join Our Discord (devs only)</a>
-  ·
-  <a href="https://docs.postiz.com/public-api">Public API</a><br />
-</p>
-<p align="center">
-  <a href="https://www.npmjs.com/package/@postiz/node">NodeJS SDK</a>
-  ·
-  <a href="https://www.npmjs.com/package/n8n-nodes-postiz">N8N custom node</a>
-  ·
-  <a href="https://apps.make.com/postiz">Make.com integration</a>
+  <a href="https://github.com/Tchuekam/postyfy"><img src="https://img.shields.io/badge/GitHub-Tchuekam%2Fpostyfy-181717?style=flat-square&logo=github" alt="GitHub Repo" /></a>
+  <a href="https://tchuekam.com"><img src="https://img.shields.io/badge/Official%20Site-tchuekam.com-612BD3?style=flat-square&logo=google-chrome&logoColor=white" alt="Website" /></a>
+  <a href="https://docs.tchuekam.com"><img src="https://img.shields.io/badge/Documentation-docs.tchuekam.com-00B4D8?style=flat-square&logo=gitbook&logoColor=white" alt="Docs" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL%203.0-blue.svg?style=flat-square" alt="License" /></a>
 </p>
 
-<br /><br />
+---
 
-## 🔌 See the leading Postiz features
+## ⚡ Overview
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=BdsCVvEYgHU" target="_blank">
-    <img alt="Postiz" src="https://github.com/user-attachments/assets/8b9b7939-da1a-4be5-95be-42c6fce772de" />
-  </a>
-</p>
+**Postyfy** is the ultimate enterprise-grade social media operating system designed, engineered, and maintained by **GianTecH Empire**. 
 
-## ✨ Features
+Whether you are scaling personal brand authority, operating a multi-client digital agency, or orchestrating autonomous AI content marketing pipelines, Postyfy provides end-to-end multi-platform scheduling, durable workflow execution, deep analytics, and native **Model Context Protocol (MCP)** support for autonomous agent interaction.
 
-| ![Image 1](https://github.com/user-attachments/assets/a27ee220-beb7-4c7e-8c1b-2c44301f82ef) | ![Image 2](https://github.com/user-attachments/assets/eb5f5f15-ed90-47fc-811c-03ccba6fa8a2) |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![Image 3](https://github.com/user-attachments/assets/d51786ee-ddd8-4ef8-8138-5192e9cfe7c3) | ![Image 4](https://github.com/user-attachments/assets/91f83c89-22f6-43d6-b7aa-d2d3378289fb) |
+Integrates seamlessly with the **TchueKAM Agent** ecosystem and GianTecH business automation suites to transform raw thoughts, transcripts, and assets into viral, high-converting social campaigns.
 
-### Our Sponsors
+---
 
-| Sponsor |                                  Logo                                   | Description     |
-|---------|:-----------------------------------------------------------------------:|-----------------|
-| [Hostinger](https://www.hostinger.com/vps/docker/postiz?ref=postiz) | <img src=".github/sponsors/hostinger.png" alt="Hostinger" width="500"/> | Hostinger is on a mission to make online success possible for anyone – from developers to aspiring bloggers and business owners |
-| [Virlo](https://dev.virlo.ai/?ref=postiz) | <img src="https://github.com/user-attachments/assets/25182598-5344-45fc-b9cd-e4cfa16aabfd" alt="Virlo" width="500"/> | Virlo is the #1 social media trend spotting and all-in-one GTM tool for teams leveraging short-form video |
-| [ChatbotX](https://chatbotx.io/?ref=postiz) | <img src="https://github.com/user-attachments/assets/0aa6b058-9a64-46d3-bc26-337abc51737d" alt="ChatbotX" width="500"/> | The ManyChat alternative that you can self-host, white-label, and resell to your clients. Bring your own OpenClaw, Hermes, or Claude agents! |
+## 🌐 Supported Channels (30+ Platforms)
 
-![Bronze Tier](https://opencollective.com/postiz/tiers/main-repository-bronze-tier.svg?avatarHeight=36&width=600&button=false)
+Postyfy connects directly to official APIs across all tier-1 social networks, messaging communities, and developer ecosystems:
 
-# Intro
+| Category | Platforms Supported |
+| :--- | :--- |
+| **Professional & Microblogging** | **LinkedIn** (Personal & Company Pages) · **X (Twitter)** · **Threads** · **Bluesky** · **Mastodon** |
+| **Visual & Video** | **Instagram** · **TikTok** (Personal & Business) · **YouTube** · **Pinterest** · **Dribbble** |
+| **Communities & Groups** | **Reddit** · **Discord** · **Telegram** · **Slack** · **Skool** · **Farcaster** · **Lemmy** · **Nostr** |
+| **Blogging & Long-Form** | **WordPress** · **Medium** · **Dev.to** · **Hashnode** · **Listmonk** · **Beehiiv** |
 
-- Schedule all your social media posts (many AI features)
-- Measure your work with analytics.
-- Collaborate with other team members to exchange or buy posts.
-- Invite your team members to collaborate, comment, and schedule posts.
-- At the moment, there is no difference between the hosted version and the self-hosted version
-- Perfect for automation (API) with platforms like N8N, Make.com, Zapier, etc.
+---
 
-## Tech Stack
+## 💎 Key Features
 
-- Pnpm workspaces (Monorepo)
-- NextJS (React)
-- NestJS
-- Prisma (Default to PostgreSQL)
-- Temporal
-- Resend (email notifications)
+- 📅 **Unified Interactive Visual Calendar**: Drag-and-drop scheduling across dozens of channels with timezone-aware publishing slots and queue automation.
+- 🤖 **Autonomous AI Content Generation**: Built-in Copilot for drafting engaging hooks, generating platform-tailored variations, and repurposing content in one click.
+- 🔌 **Native MCP (Model Context Protocol) Server**: Connect **TchueKAM Agent**, Claude Desktop, Cursor, or custom AI agents directly to your Postyfy instance to schedule, inspect, and optimize posts conversationally.
+- 🎨 **In-App Studio (Polotno Engine)**: High-speed canvas editor for designing images, social banners, and multi-slide carousels directly in your browser.
+- 🛡️ **Durable Temporal Workflows**: Powered by Temporal.io for guaranteed execution, automatic retries, rate-limit backoffs, and zero lost schedules even across server reboots.
+- 👥 **Multi-Tenant Team & Agency Management**: Roles, permissions, collaborative drafts, team review cycles, and customer workspaces.
+- 📈 **Aggregated Performance Analytics**: Unified tracking of impressions, engagements, clicks, audience growth, and post performance.
+- 🔗 **Shortlink Intelligence**: Native integrations with Dub.co, Kutt.it, Short.io, and LinkDrip for link tracking and UTM preservation.
 
-## Quick Start
+---
 
-To have the project up and running, please follow the [Quick Start Guide](https://docs.postiz.com/quickstart)
+## 🏗️ Architecture & Technology Stack
 
-## Sponsor Postiz
+```
+Postyfy Architecture (GianTecH Empire)
+├── apps/
+│   ├── frontend/         # Next.js App Router, React, Tailwind CSS, SWR, Polotno
+│   ├── backend/          # NestJS Modular REST API, Prisma ORM, Swagger, MCP Server
+│   ├── orchestrator/     # Temporal.io Worker for durable background jobs & schedules
+│   ├── extension/        # Browser extension for advanced platform sessions
+│   └── sdk/              # Official TypeScript / Node.js API client SDK
+└── libraries/
+    ├── nestjs-libraries/ # Shared Prisma services, 30+ Social Integrations, Email
+    ├── react-shared-libraries/ # Reusable UI components, Contexts, i18n
+    └── helpers/          # Common validation, string formatters, link cleaners
+```
 
-We now give a few options to Sponsor Postiz:
-- Just a donation: You like what we are building, and want to buy us some coffee so we can build faster.
-- Main repository: Get your logo with a backlink from the main Postiz repository. Postiz has over 7M downloads and 20k views per month.
+- **Frontend**: Next.js, React, Tailwind CSS 3, Mantine, SWR, CopilotKit
+- **Backend**: NestJS, TypeScript, Prisma ORM, Express
+- **Orchestration**: Temporal.io (Distributed durable workflow engine)
+- **Database & Cache**: PostgreSQL 17, Redis 7.2, Elasticsearch 7.17
+- **Media Storage**: Cloudflare R2 (S3 compatible) or Local Storage
+- **Email Delivery**: Resend & Nodemailer engines
 
-Link: https://opencollective.com/postiz
+---
 
-## Postiz Compliance
+## 🚀 Quick Start (Docker Deployment)
 
-- Postiz is an open-source, self-hosted social media scheduling tool that supports platforms like X (formerly Twitter), Bluesky, Mastodon, Discord, and others.
-- Postiz hosted service uses official, platform-approved OAuth flows.
-- Postiz does not automate or scrape content from social media platforms.
-- Postiz does not collect, store, or proxy API keys or access tokens from users.
-- Postiz never asks users to paste API keys into our hosted product.
-- Postiz users always authenticate directly with the social platform (e.g., X, Discord, etc.), ensuring platform compliance and data privacy.
+The fastest way to launch your own production or development instance of Postyfy:
 
-## License
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Tchuekam/postyfy.git
+cd postyfy
+```
 
-This repository's source code is available under the [AGPL-3.0 license](LICENSE).
+### 2. Configure Environment Variables
+Copy the sample environment file and configure your URLs and keys:
+```bash
+cp .env.example .env
+```
 
-<br /><br />
+Key variables to configure in `.env`:
+```env
+# Primary URLs
+MAIN_URL="https://your-domain.com"
+FRONTEND_URL="https://your-domain.com"
+NEXT_PUBLIC_BACKEND_URL="https://your-domain.com/api"
+JWT_SECRET="generate-a-strong-random-secret"
 
-<p align="center">
-  <img src="https://github.com/snyk-labs/secure-developer-sample-repo/raw/main/badge_full.svg" alt="Secure Developer Badge Full" width="150">
-</p>
+# Storage (Cloudflare R2 or Local)
+STORAGE_PROVIDER="local"
+
+# Email Provider
+EMAIL_PROVIDER="resend"
+RESEND_API_KEY="your-resend-key"
+EMAIL_FROM_ADDRESS="notifications@your-domain.com"
+EMAIL_FROM_NAME="Postyfy"
+
+# AI Capabilities
+OPENAI_API_KEY="your-openai-api-key"
+```
+
+### 3. Launch with Docker Compose
+```bash
+docker compose up -d
+```
+
+Your Postyfy dashboard will be available at:
+👉 `http://localhost:4007` (or your configured `MAIN_URL`)
+
+---
+
+## 🤖 Automations & Integrations
+
+Postyfy exposes a first-class developer API and pre-built integration nodes:
+- **N8N / Make.com / Zapier**: Automate publishing workflows from Notion, Airtable, Google Sheets, or RSS feeds.
+- **Node.js / TypeScript SDK**: Available in `apps/sdk` for programmatic content distribution.
+- **MCP Server**: Seamlessly pluggable into modern AI developer tools and the **TchueKAM Agent** desktop environment.
+
+---
+
+## 🏢 About GianTecH Empire
+
+**GianTecH Empire** is an innovative enterprise technology venture founded by **Rostand Tchuekam**, dedicated to engineering high-performance software, autonomous AI systems, and scalable digital solutions.
+
+- **Founder & Visionary**: Rostand Tchuekam
+- **Official Website**: [https://tchuekam.com](https://tchuekam.com)
+- **Documentation**: [https://docs.tchuekam.com](https://docs.tchuekam.com)
+- **Flagship AI Systems**: [TchueKAM Agent](https://tchuekam.com) · Postyfy · Magida Enterprise
+- **Contact & Inquiries**: `rebornedbetalpha@gmail.com` / `contact@tchuekam.com`
+- **Headquarters**: Yaoundé (Bastos), Cameroon
+
+---
+
+## 📄 License
+
+This software is distributed under the [AGPL-3.0 License](LICENSE). Built and maintained with passion by the **GianTecH Empire** engineering team.
