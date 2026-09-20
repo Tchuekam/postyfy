@@ -78,11 +78,16 @@ export function Register() {
 function getHelpfulReasonForRegistrationFailure(httpCode: number) {
   switch (httpCode) {
     case 400:
-      return 'Email already exists';
+      return 'Email already exists or invalid registration data.';
     case 404:
-      return 'Your browser got a 404 when trying to contact the API, the most likely reasons for this are the NEXT_PUBLIC_BACKEND_URL is set incorrectly, or the backend is not running.';
+      return 'Unable to reach authentication server. The backend API is not connected or NEXT_PUBLIC_BACKEND_URL is not configured.';
+    case 500:
+    case 502:
+    case 503:
+    case 504:
+      return 'Server is temporarily unavailable. Please try again in a moment.';
   }
-  return 'Unhandled error: ' + httpCode;
+  return 'Registration failed (Status ' + httpCode + '). Please try again.';
 }
 export function RegisterAfter({
   token,
@@ -139,17 +144,34 @@ export function RegisterAfter({
             }
           });
         } else {
+          let errorMsg = '';
+          try {
+            const rawText = await response.text();
+            if (!rawText || rawText.trim().startsWith('<') || rawText.includes('<!DOCTYPE')) {
+              errorMsg = getHelpfulReasonForRegistrationFailure(response.status);
+            } else {
+              try {
+                const parsed = JSON.parse(rawText);
+                errorMsg = Array.isArray(parsed.message)
+                  ? parsed.message.join(', ')
+                  : (parsed.message || rawText);
+              } catch {
+                errorMsg = rawText;
+              }
+            }
+          } catch {
+            errorMsg = getHelpfulReasonForRegistrationFailure(response.status);
+          }
           form.setError('email', {
-            message: await response.text(),
+            message: errorMsg,
           });
         }
       })
       .catch((e) => {
+        setLoading(false);
         form.setError('email', {
           message:
-            'General error: ' +
-            e.toString() +
-            '. Please check your browser console.',
+            'Unable to connect to authentication server. Please check your connection.',
         });
       });
   };

@@ -25,15 +25,44 @@ export function Forgot() {
   const fetchData = useFetch();
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     setLoading(true);
-    await fetchData('/auth/forgot', {
-      method: 'POST',
-      body: JSON.stringify({
-        ...data,
-        provider: 'LOCAL',
-      }),
-    });
-    setState(true);
-    setLoading(false);
+    try {
+      const response = await fetchData('/auth/forgot', {
+        method: 'POST',
+        body: JSON.stringify({
+          ...data,
+          provider: 'LOCAL',
+        }),
+      });
+      if (response.status === 200) {
+        setState(true);
+      } else {
+        let errorMsg = '';
+        try {
+          const raw = await response.text();
+          if (!raw || raw.trim().startsWith('<') || raw.includes('<!DOCTYPE')) {
+            errorMsg = response.status === 404
+              ? 'Unable to reach authentication server. Please check your backend configuration.'
+              : `Password reset request failed (Status ${response.status}).`;
+          } else {
+            try {
+              const parsed = JSON.parse(raw);
+              errorMsg = Array.isArray(parsed.message)
+                ? parsed.message.join(', ')
+                : (parsed.message || raw);
+            } catch {
+              errorMsg = raw;
+            }
+          }
+        } catch {
+          errorMsg = 'Failed to request password reset. Please try again.';
+        }
+        form.setError('email', { message: errorMsg });
+      }
+    } catch {
+      form.setError('email', { message: 'Unable to connect to authentication server. Please try again.' });
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <div className="flex flex-1 flex-col">

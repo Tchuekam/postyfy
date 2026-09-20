@@ -47,15 +47,39 @@ export function Login() {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     setLoading(true);
     setNotActivated(false);
-    const login = await fetchData('/auth/login', {
-      method: 'POST',
-      body: JSON.stringify({
-        ...data,
-        provider: 'LOCAL',
-      }),
-    });
-    if (login.status === 400) {
-      const errorMessage = await login.text();
+    try {
+      const login = await fetchData('/auth/login', {
+        method: 'POST',
+        body: JSON.stringify({
+          ...data,
+          provider: 'LOCAL',
+        }),
+      });
+      if (login.status === 200) {
+        return;
+      }
+      setLoading(false);
+      let errorMessage = '';
+      try {
+        const rawText = await login.text();
+        if (!rawText || rawText.trim().startsWith('<') || rawText.includes('<!DOCTYPE')) {
+          errorMessage = login.status === 404
+            ? 'Unable to reach authentication server. The backend API is not connected or NEXT_PUBLIC_BACKEND_URL is not configured.'
+            : `Authentication failed (Status ${login.status}). Please try again.`;
+        } else {
+          try {
+            const parsed = JSON.parse(rawText);
+            errorMessage = Array.isArray(parsed.message)
+              ? parsed.message.join(', ')
+              : (parsed.message || rawText);
+          } catch {
+            errorMessage = rawText;
+          }
+        }
+      } catch {
+        errorMessage = 'Authentication failed. Please check your credentials and try again.';
+      }
+
       if (errorMessage === 'User is not activated') {
         setNotActivated(true);
       } else {
@@ -63,7 +87,11 @@ export function Login() {
           message: errorMessage,
         });
       }
+    } catch (e: any) {
       setLoading(false);
+      form.setError('email', {
+        message: 'Unable to connect to authentication server. Please check your connection.',
+      });
     }
   };
   return (
