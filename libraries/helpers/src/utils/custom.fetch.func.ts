@@ -43,7 +43,11 @@ export const customFetch = (
             .find((p) => p.includes('impersonate='))
             ?.split('=')[1];
 
-    const fetchRequest = await fetch(params.baseUrl + url, {
+    const baseUrl = (params.baseUrl || '/api').replace(/\/+$/, '');
+    const requestPath = url.startsWith('/') ? url : `/${url}`;
+    const targetUrl = baseUrl + requestPath;
+
+    const fetchRequest = await fetch(targetUrl, {
       ...(secured ? { credentials: 'include' } : {}),
       ...(newRequestObject || options),
       headers: {

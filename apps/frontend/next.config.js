@@ -45,12 +45,19 @@ const nextConfig = {
     ];
   },
   async rewrites() {
+    const backendUrl =
+      process.env.BACKEND_INTERNAL_URL ||
+      'https://postiz-production-646a.up.railway.app/api';
     return [
+      {
+        source: '/api/:path*',
+        destination: `${backendUrl}/:path*`,
+      },
       {
         source: '/uploads/:path*',
         destination:
           process.env.STORAGE_PROVIDER === 'local'
-            ? '/api/uploads/:path*'
+            ? `${backendUrl}/uploads/:path*`
             : '/404',
       },
     ];
