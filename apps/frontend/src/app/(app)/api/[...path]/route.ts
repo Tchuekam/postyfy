@@ -2,6 +2,16 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
+const HOP_BY_HOP_HEADERS = new Set([
+  'content-encoding',
+  'content-length',
+  'transfer-encoding',
+  'connection',
+  'keep-alive',
+  'set-cookie',
+  'etag',
+]);
+
 async function handler(
   request: NextRequest,
   context: { params: Promise<{ path?: string[] }> | { path?: string[] } }
@@ -22,7 +32,12 @@ async function handler(
     const headers = new Headers();
     request.headers.forEach((value, key) => {
       const lower = key.toLowerCase();
-      if (lower !== 'host' && lower !== 'connection') {
+      if (
+        lower !== 'host' &&
+        lower !== 'connection' &&
+        lower !== 'content-length' &&
+        lower !== 'accept-encoding'
+      ) {
         headers.set(key, value);
       }
     });
@@ -41,7 +56,7 @@ async function handler(
     const responseHeaders = new Headers();
     backendRes.headers.forEach((value, key) => {
       const lower = key.toLowerCase();
-      if (lower !== 'set-cookie') {
+      if (!HOP_BY_HOP_HEADERS.has(lower)) {
         responseHeaders.set(key, value);
       }
     });
