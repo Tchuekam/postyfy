@@ -50,10 +50,6 @@ const nextConfig = {
       'https://postiz-production-646a.up.railway.app/api';
     return [
       {
-        source: '/api/:path*',
-        destination: `${backendUrl}/:path*`,
-      },
-      {
         source: '/uploads/:path*',
         destination:
           process.env.STORAGE_PROVIDER === 'local'

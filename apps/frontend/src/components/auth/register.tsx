@@ -140,7 +140,9 @@ export function RegisterAfter({
             if (response.headers.get('activate') === 'true') {
               router.push('/auth/activate');
             } else {
-              router.push('/auth/login');
+              window.location.href = isGeneral
+                ? '/launches?onboarding=true'
+                : '/analytics?onboarding=true';
             }
           });
         } else {

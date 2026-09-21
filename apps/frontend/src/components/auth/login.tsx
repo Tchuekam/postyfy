@@ -56,6 +56,7 @@ export function Login() {
         }),
       });
       if (login.status === 200) {
+        window.location.href = isGeneral ? '/launches' : '/analytics';
         return;
       }
       setLoading(false);
